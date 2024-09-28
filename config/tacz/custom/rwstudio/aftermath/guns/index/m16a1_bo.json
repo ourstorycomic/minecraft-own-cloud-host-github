@@ -1,0 +1,8 @@
+{
+  "name": "aftermath.gun.m16a1_bo.name",
+  "display": "aftermath:m16a1_bo_display",
+  "data": "aftermath:m16a1_bo_data",
+  "type": "rifle",
+  "tooltip": "aftermath.gun.m16a1_bo.desc",
+  "sort": 3
+}

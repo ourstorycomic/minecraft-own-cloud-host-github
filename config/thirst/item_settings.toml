@@ -1,0 +1,17 @@
+
+[Drinks]
+	#Defines items that will recover thirst when drunk
+	#Format: [["item-id-1", hydration-amount, quenching-amount], ["item-id-2", hydration-amount, quenching-amount], ...etc]
+	drinks = [["minecraft:potion", 3, 8], ["craftingdead:blood_syringe", 4, 8], ["craftingdeadsurvival:water_bottle", 10, 8], ["craftingdeadsurvival:water_canteen", 10, 8], ["craftingdeadsurvival:open_canned_sweetcorn", 4, 4], ["craftingdeadsurvival:open_canned_beans", 5, 4], ["craftingdeadsurvival:open_canned_tuna", 2, 2], ["craftingdeadsurvival:open_canned_peaches", 6, 5], ["craftingdeadsurvival:open_canned_pasta", 3, 3], ["craftingdeadsurvival:open_canned_tomato_soup", 7, 6], ["craftingdeadsurvival:open_canned_custard", 2, 2], ["craftingdeadsurvival:open_canned_pickles", 3, 3], ["craftingdeadsurvival:orange", 6, 3], ["craftingdeadsurvival:rotten_orange", 2, 1], ["craftingdeadsurvival:pear", 5, 4], ["craftingdeadsurvival:rotten_pear", 2, 1], ["craftingdeadsurvival:apple", 3, 3], ["craftingdeadsurvival:rotten_apple", 1, 1], ["craftingdeadsurvival:rotten_melon_slice", 3, 1], ["minecraft:melon_slice", 7, 6], ["craftingdeadsurvival:blueberry", 4, 4], ["craftingdeadsurvival:rotten_blueberry", 1, 1], ["craftingdeadsurvival:rotten_raspberry", 1, 1], ["craftingdeadsurvival:raspberry", 4, 4], ["thirst:terracotta_water_bowl", 4, 5]]
+
+[Foods]
+	#Defines items that will recover thirst when eaten
+	#Format: [["item-id-1", hydration-amount, quenching-amount], ["item-id-2", hydration-amount, quenching-amount], ...etc]
+	foods = [["minecraft:apple", 2, 3], ["minecraft:golden_apple", 2, 3], ["minecraft:enchanted_golden_apple", 2, 3], ["minecraft:carrot", 1, 2], ["minecraft:mushroom_stew", 2, 3], ["minecraft:rabbit_stew", 2, 3], ["minecraft:beetroot_soup", 5, 7], ["minecraft:beetroot", 1, 2], ["minecraft:sweet_berries", 1, 2], ["minecraft:glow_berries", 1, 2], ["minecraft:golden_carrot", 1, 2]]
+
+[Blacklist]
+	#A mod may have added thirst compatibility to an item via code. If you want to edit the thirst values
+	#of that item, add an entry in one of the first two lists. If instead you want to remove thirst support for that item, add an entry in this list
+	#Format: ["examplemod:example_item_1", "examplemod:example_item_2"]
+	itemsBlacklist = []
+

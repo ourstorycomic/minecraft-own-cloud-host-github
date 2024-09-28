@@ -1,0 +1,4 @@
+fakePlayer:
+  permissions:
+  - essentials.build
+versionCheck: true

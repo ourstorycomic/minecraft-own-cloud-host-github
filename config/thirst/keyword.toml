@@ -1,0 +1,21 @@
+
+["BlackList Keyword"]
+	#Defines items will be ignored if it contains the keyword
+	#Format: [(keyword1|keyword2|keyword3)]
+	keyword_blacklist = "(?:\\b|[^a-zA-Z])(dried|candied|leaf|leaves|gummy|crate|jam|sauce|bucket|seed|cookie|pie|bush|sapling|bean|curry|cake|candy)(?:\\b|[^a-zA-Z])"
+
+["Drink KeyWord"]
+	#Defines items will be considered as drink if it contains the keyword
+	#Format: [(keyword1|keyword2|keyword3)]
+	keyword_drink = "(?:\\b|[^a-zA-Z])(drink|juice|tea|soda|coffee|wine|beer|cider|yogurt|milkshake|smoothie)(?:\\b|[^a-zA-Z])"
+
+["Soup KeyWord"]
+	#Defines items will be considered as soup if it contains the keyword
+	#Format: [(keyword1|keyword2|keyword3)]
+	keyword_soup = "(soup|stew|porridge)"
+
+["Fruit KeyWord"]
+	#Defines items will be considered as fruit if it contains the keyword
+	#Format: [(keyword1|keyword2|keyword3)]
+	keyword_fruit = "(?:\\b|[^a-zA-Z])(fruit|berry|berries|grape|orange|peach|pear|coconut|lemon|melon|cherry|apple)(?:\\b|[^a-zA-Z])"
+

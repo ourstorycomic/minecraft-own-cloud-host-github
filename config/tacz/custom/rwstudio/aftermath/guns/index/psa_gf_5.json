@@ -1,0 +1,8 @@
+{
+    "name": "aftermath.gun.psa_gf_5.name",
+    "display": "aftermath:psa_gf_5_display",
+    "data": "aftermath:psa_gf_5_data",
+    "type": "rifle",
+	"item_type": "modern_kinetic",
+	"sort": 1
+}

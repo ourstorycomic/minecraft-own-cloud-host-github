@@ -1,0 +1,9 @@
+{
+  "name": "aftermath.gun.m4_urgi.name",
+  "display": "aftermath:m4_urgi_display",
+  "data": "aftermath:m4_urgi_data",
+  "type": "rifle",
+  "tooltip": "aftermath.gun.m4.desc",
+  "item_type": "modern_kinetic",
+  "sort": 10
+}

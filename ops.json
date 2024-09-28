@@ -1,1 +1,14 @@
-[{}]
+[
+  {
+    "uuid": "389f9be9-0765-3055-a2ff-7b9c7fffeff0",
+    "name": "Need2Rest",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "cdbd7b27-7df5-36df-ad3a-7979420cedeb",
+    "name": "corpse_3",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

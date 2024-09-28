@@ -1,0 +1,9 @@
+{
+  "name": "aftermath.gun.xm7.name",
+  "display": "aftermath:xm7_display",
+  "data": "aftermath:xm7_data",
+  "type": "rifle",
+  "tooltip": "aftermath.gun.xm7.desc",
+  "item_type": "modern_kinetic",
+  "sort": 10
+}

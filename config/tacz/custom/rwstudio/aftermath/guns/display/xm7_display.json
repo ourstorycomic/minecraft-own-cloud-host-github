@@ -1,0 +1,39 @@
+{
+  "model": "aftermath:gun/xm7_geo",
+  "texture": "aftermath:gun/uv/xm7",
+  "slot": "aftermath:gun/slot/xm7",
+  "hud": "aftermath:gun/hud/xm7",
+  "animation": "aftermath:xm7",
+  "use_default_animation": "rifle",
+  "third_person_animation": "default",
+  "transform": {
+    "scale": {
+      "thirdperson": [0.6, 0.6, 0.6],
+      "ground": [0.6, 0.6, 0.6],
+      "fixed": [1.0, 1.0, 1.0]
+    }
+  },
+  "muzzle_flash": {
+    "texture": "tacz:flash/common_muzzle_flash",
+    "scale": 1
+  },
+  "shell": {
+    "initial_velocity": [5, 2, 1],
+    "random_velocity": [1, 1, 0.25],
+    "acceleration": [0.0, -10, 0.0],
+    "angular_velocity": [360, -1200, 90],
+    "living_time": 1.0
+  },
+  "sounds": {
+    "shoot": "aftermath:m4_urgi/shoot",
+    "shoot_3p": "aftermath:m4_urgi/shoot_3p",
+    "silence": "aftermath:m4_urgi/silence",
+    "silence_3p": "aftermath:m4_urgi/silence_3p",
+    "draw": "aftermath:m4_urgi/draw",
+    "put_away": "aftermath:m4_urgi/put_away",
+    "reload_empty": "aftermath:m4_urgi/reload_empty",
+    "reload_tactical": "aftermath:m4_urgi/reload_tactical",
+    "inspect": "aftermath:m4_urgi/inspect",
+    "inspect_empty": "aftermath:m4_urgi/inspect_empty"
+  }
+}

@@ -1,0 +1,10 @@
+personal-ping-message: "&aYour ping is &l%ping%&r&ams."
+others-ping-message: "&aThe ping of &l%u%&r&a is &l%ping%&r&ams."
+invalid-player: "&cPlayer not found."
+kick-high-ping:
+#reload/restart the server when you enable/disable the "kick system"
+  enabled: false
+  max-ping: 1234
+  kick-message: "&cYour ping is too high. Check your connection. Ping: &l%ping%&r&cms"
+  interval-check-seconds: 300
+interval-ping-check-seconds: 5

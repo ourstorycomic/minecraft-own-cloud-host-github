@@ -1,0 +1,8 @@
+{
+  "name": "aftermath.gun.minigun.name",
+  "display": "aftermath:minigun_display",
+  "data": "aftermath:minigun_data",
+  "tooltip": "aftermath.gun.minigun.desc",
+  "type": "mg",
+  "sort": 10
+}

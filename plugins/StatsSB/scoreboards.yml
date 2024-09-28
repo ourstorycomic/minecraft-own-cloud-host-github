@@ -1,0 +1,136 @@
+############################################################
+#                                                          #
+#                   Scoreboards File                       #
+#                                                          #
+############################################################
+#
+# Scoreboards has gotten quite complicated with all the feature requests
+#
+# Scoreboard priority goes top to bottom furthest out from the tree inward:
+#
+# ├── Region
+# │   ├── Permission
+# │   │   └── Modifiers
+# │   ├── Modifiers
+# │   ├── Cycle
+# │   └── Single Board
+# ├── World
+# │   ├── Permission
+# │   │   └── Modifiers
+# │   ├── Modifiers
+# │   ├── Cycle
+# │   └── Single Board
+# └── Fallback
+#
+#
+# Available Modifiers: Permission, Potion, recommend more in the discord
+
+
+Scoreboards:
+  Fallback:
+    title: "&aStats Scoreboard"
+    lines:
+      - "&7%date%"
+      - "&r"
+      - "&fKills: &3%kills%"
+      - "&fDeaths: &3%deaths%"
+      - "&fKD: &3%kd%"
+      - "&fStreak: &3%streak%"
+      - "&r "
+      - "&7&l&m-------------"
+
+  Regions:
+    region-1:
+      module-priority: 1
+      permission:
+        # scoreboard permissions are specific statssb.scoreboard.name you provide below
+        vip:
+          permission-priority: 1
+          modifiers: []
+          board: "region-1"
+          cycle-boards: true
+          cycle:
+            - "region-1:200"
+            - "region-4:200"
+        admin:
+          permission-priority: 2
+          modifiers: []
+          board: "region-1"
+          cycle-boards: true
+          cycle:
+            - "region-1:200"
+            - "region-5:200"
+
+
+      modifiers: []
+      board: "region-1"
+      cycle-boards: true
+      cycle:
+        # board name:stay value in ticks
+        - "region-1:200"
+        - "region-2:200"
+        - "region-1:100"
+        - "region-3:500"
+
+
+  # Will Grab the world the user is in and use this
+  Worlds:
+    world:
+      permission:
+        # scoreboard permissions are specific statssb.scoreboard.name you provide below
+        vip:
+          permission-priority: 1
+          modifiers: []
+          board: "example-1"
+          cycle-boards: false
+          cycle:
+            - "example-1:200"
+            - "example-2:200"
+        admin:
+          permission-priority: 2
+          modifiers: []
+          board: "example-1"
+          cycle-boards: false
+          cycle:
+            - "example-1:200"
+            - "example-2:200"
+      modifiers:
+        potion-effect:
+          JUMP:
+            modifier-priority: 1
+            board: "jump-example-1"
+            cycle-boards: false
+            cycle:
+              - "jump-example-1:200"
+
+      board: "example-1"
+      cycle-boards: false
+      cycle:
+        # board name:stay value in ticks
+        - "example-1:200"
+        - "example-2:200"
+
+
+
+Boards:
+  example-1:
+    title: "%animation:defaultAnimation%"
+    lines:
+      - "&7%date%"
+      - "%blank-1%"
+      - "&fKills: &3%kills%"
+      - "&fDeaths: &3%deaths%"
+      - "&fKD: &3%kd%"
+      - "&fStreak: &3%streak%"
+      - "&fzombie kills: &3%hostile_mob_kills%"
+      - "%blank-2%"
+      - "&7&l&m-------------"
+  example-2:
+    title: "%animation:defaultAnimation%"
+    lines:
+      - "&7%date%"
+      - "%blank-1%"
+      - "&fSecondary Scoreboard"
+      - "&fEdit this in the files!"
+      - "%blank-2%"
+      - "&7&l&m-------------"

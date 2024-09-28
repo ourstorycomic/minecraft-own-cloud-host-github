@@ -1,0 +1,130 @@
+Messages: 
+   prefix: '&3[&bStatsSB&3] '
+   no-permission-message: '&cYou do not have the Correct Permissions for this Command!'
+   StatsCommand: 
+      usage: '&cCorrect Usage: &7/Stats &7(name)'
+      notEnabled: '&cThis command is not Enabled'
+      no-permission-message: '&cYou do not have the Correct Permissions for this Command!'
+      no-stats-logged: '&c%name% &7does not have stats logged.'
+   Scoreboard: 
+      disabled: '&cScoreboards have been disabled in this world.'
+      usage: 
+      - '&cCorrect Usage: &7/Board (toggle/skip/hold)'
+      Toggle: 
+         toggle-on: '&7Scoreboard has been Toggled &aOn'
+         toggle-off: '&7Scoreboard has been Toggled &cOff'
+         playerIsInvisible: '&cYou cannot toggle your scoreboard while vanished.'
+      Skip: 
+         skipped: '&7You Skipped the active board.'
+      Hold: 
+         hold-on: '&7You are now holding this scoreboard.'
+         hold-off: '&7The scoreboard will now continue.'
+
+   Leaderboard: 
+      invalidStatType: '&cInvalid Stat Type.'
+      Kill: 
+         boardTitle: Kills Leaderboard
+         plural: kill
+         pluralMulti: kills
+      Death: 
+         boardTitle: Deaths Leaderboard
+         plural: death
+         pluralMulti: deaths
+      KD: 
+         boardTitle: KD Leaderboard
+         plural: kd
+         pluralMulti: kd
+      Kill-Streak: 
+         boardTitle: Kill Streak Leaderboard
+         plural: kill in a row
+         pluralMulti: kills in a row
+      Best-Kill-Streak: 
+         boardTitle: Best Kill Streak Leaderboard
+         plural: kill in a row
+         pluralMulti: kills in a row
+      All-Mob: 
+         boardTitle: All Mob Kill Leaderboard
+         plural: mob kill
+         pluralMulti: mob kills
+      Hostile-Mob: 
+         boardTitle: Hostile Mob Kill Leaderboard
+         plural: hostile mob kill
+         pluralMulti: hostile mob kills
+      Passive-Mob: 
+         boardTitle: Passive Mob Kill Leaderboard
+         plural: passive mob kill
+         pluralMulti: passive mob kills
+      Arrows-Shot: 
+         boardTitle: Arrows Shot Leaderboard
+         plural: arrow shot
+         pluralMulti: arrows shot
+      Arrows-Hit: 
+         boardTitle: Arrows Hit Leaderboard
+         plural: arrow hit
+         pluralMulti: arrows hit
+      Damage-Dealt: 
+         boardTitle: Damage Dealt Leaderboard
+         plural: damage dealt
+         pluralMulti: damage dealt
+      Damage-Taken: 
+         boardTitle: Damage Taken Leaderboard
+         plural: damage taken
+         pluralMulti: damage taken
+
+   StatsSBCommand: 
+      set: 
+         usage: '&cCorrect Usage: &7/StatsSB Set &7<name> <kills/deaths> <amount>'
+         notExist: '&7%name% &cdoes not exist.'
+         number: '&cAmount must be a number.'
+         set: '&7You set &c%name%''s &7%type% to &c%newamount%'
+      add: 
+         usage: '&cCorrect Usage: &7/StatsSB Add &7<name> <type> <amount>'
+         notExist: '&7%name% &cdoes not exist.'
+         number: '&cAmount must be a number.'
+         added: '&7You added &c%amount% %type% &7to &c%name%, &7new amount: &c%newamount%'
+      remove: 
+         usage: '&cCorrect Usage: &7/StatsSB Remove &7<name> <type> <amount>'
+         notExist: '&7%name% &cdoes not exist.'
+         number: '&cAmount must be a number.'
+         removed: '&7You removed &c%amount% %type% &7to &c%name%, &7new amount: &c%newamount%'
+      purge: 
+         usage: '&cCorrect Usage: &7/StatsSB Purge &7<kills/deaths/mobs>'
+         invalid-stat: "&c%args[1]% &7is a invalid stat type. \n&7Valid types: &6%types%"
+         purged: '&7You successfully purged all &6%type% &7data.'
+      import: 
+         usage: '&cCorrect Usage: &7/StatsSB Import &7<player> <StatType>'
+         notExist: '&7%name% &cdoes not exist.'
+         pulled: '&7You successfully imported %type% stats into the &c%name%''s &7stats, new amount: &c%newamount%'
+         pulled-all: '&7You successfully imported %type% stats into all currently logged players stats.'
+      hologram: 
+         usage: '&cCorrect Usage: /StatsSB Hologram Create/Delete'
+         noHolographicDisplays: '&cHolographic Displays or Decent Holograms plugins cannot be found on
+            this server.'
+         displaysUsage: '&cCorrect Usage: &7/StatsSB Displays'
+         create: 
+            usage: '&cCorrect Usage: &7/StatsSB Hologram Create <name> <kill/death/streak/etc>'
+            exists: '&7%name% &calready exists.'
+            created: '&aHologram &b%name% &acreated.'
+         delete: 
+            usage: '&cCorrect Usage: &7/StatsSB Hologram Delete <name> '
+            notExist: '&7%name% &cis not a hologram.'
+            deleted: '&cHologram &7%name% &cremoved.'
+   CombatTags: 
+      commandInCombat: '&cYou are in Combat for %tag_time% more seconds.'
+      commandOutOfCombat: '&aYou are not in Combat.'
+      enteredCombatMessage: '&cYou have entered combat. Do not log out!'
+      leftCombatMessage: '&aYou are no longer in combat. You can log out safely.'
+      blacklistedCommandInCombat: '&cYou cannot use this command in combat! &7(&c%seconds% second(s) left&7)'
+      killedBecauseOffline: '&a%player% &cHas logged out in combat. Their items have dropped.'
+      playerNotExist: '&c%player% does not exist.'
+      in-combat-time-placeholder: '&a%tag_time%'
+      not-in-combat-placeholder: Not In Combat
+      Commands: 
+         add: 
+            usage: '&cCorrect Usage: &7/CombatTags add <name> '
+            usageTagged: '&cCorrect Usage: &7/CombatTags add <name> - &bPlayer is already tagged.'
+            added: '&7You have tagged &c%name% &7for &c%tag_time% &7seconds.'
+         remove: 
+            usage: '&cCorrect Usage: &7/CombatTags remove <name> '
+            usageNotTagged: '&cCorrect Usage: &7/CombatTags remove <name> - &bPlayer is not tagged.'
+            removed: '&7You have removed &c%name% &7from combat.'

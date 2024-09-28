@@ -1,0 +1,19 @@
+Animations:
+  #  20 ticks per second for tick speed
+  defaultAnimation:
+    animationSpeed: 5 # 1/4 second
+    animation:
+      - "&8-&co&8- &4AFTERMATH &8-&co&8-"
+      - "&8&co&8-- &4AFTERMATH &8--&co&8"
+      - "&8-&co&8- &4AFTERMATH &8-&co&8-"
+      - "&8--&ao&8 &aAFTERMATH &8&ao&8--"
+      - "&8-&ao&8- &aAFTERMATH &8-&ao&8-"
+      - "&8&ao&8-- &aAFTERMATH &8--&ao&8"
+      - "&8-&ao&8- &aAFTERMATH &8-&ao&8-"
+      - "&8--&co&8 &4AFTERMATH &8&co&8--"
+  statAnimation:
+    animationSpeed: 60 # 3 seconds
+    animation:
+      - "&8Kills: &7%kills%"
+      - "&8Deaths: &7%deaths%"
+      - "&8KD: &7%kd%"

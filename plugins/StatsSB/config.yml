@@ -1,0 +1,117 @@
+#                 Stats Scoreboard Config                        #
+#                  Color Codes Supported                         #
+##################################################################
+
+MainOptions: 
+  # Update Checker will check if there's an update and notify the console and players with the permission statssb.admin
+   updateChecker: true
+   ignoreSpawnerMobs: false
+
+  # Disable Certain World Stats, You can disable specific worlds from tracking stats.
+   disabledWorlds: 
+   - statssb_no_stats_world
+
+   disabledRegions: 
+   - statssb_no_stats_region
+
+  # worlds the scoreboard is hidden.
+   hiddenWorlds: 
+   - statssb_no_scoreboard_world
+
+  # regions the scoreboard is hidden.
+   hiddenRegions: 
+   - statssb_no_scoreboard_region
+
+# Combat Tags, Place fighting players into a state that locks the players from escaping from the aggressor.
+CombatTags: 
+   enabled: false
+   tagTime: 10
+   disableFlight: true
+   killLogout: true
+   healKiller: false
+   disabled: 
+   - fly
+   - spawn
+   - hub
+   - home
+
+# Scoreboard Settings, Self explanatory.
+Scoreboard: 
+   enabled: true
+  # If this is false, will just use the default board.
+   enableAdvancedBoards: true
+   toggledByDefault: true
+   dateTimeZone: PST
+   dateFormat: MM/dd/yyyy
+   boardTickSpeed: 1
+
+#Stats Command Settings.
+StatsCommand: 
+   enabled: true
+   enable-permission: false
+   message: 
+   - '&9&l&m----------------------'
+   - '&3User: &7%user%'
+   - '&3Kills Rank: &7%rank%'
+   - '&3Kills: &7%kills%'
+   - '&3Deaths: &7%deaths%'
+   - '&3KD: &7%kd%'
+   - '&3Streak: &7%streak%'
+   - '&r'
+   - '&3Passive: &7%passive_mob_kills% '
+   - '&3Hostile: &7%hostile_mob_kills% '
+   - '&3Arrows Shot: &7%arrows_shot% '
+   - '&3Arrows Hit: &7%arrows_hit% '
+   - '&3Damage Dealt: &7%damage_dealt% '
+   - '&3Damage Taken: &7%damage_taken% '
+   - '&9&l&m----------------------'
+
+# Leaderboard Settings. Custom Message supported.
+Leaderboard: 
+  ## This is a sensitive value. The lower the value it will likely lag if your server specs aren't great
+  ## You can use the placeholder %leaderboard_update_time% for a formatted hh:mm:ss countdown.
+  ## Title Is Set in Messages.yml
+   update-time-in-seconds: 60
+   number-of-players-to-show: 10
+   playerFormat: '&7  #&f%rank% &3%player% &f- &7%amount% %plural%'
+   message: 
+   - '&8   &l&m                              '
+   - ' '
+   - '&b&l   %title%'
+   - ' '
+   - '%players%'
+   - ' '
+   - '&8   &l&m                              '
+
+database: 
+  # There's two database types
+  # SQLITE
+  # MYSQL
+   type: sqlite
+
+  # <<< If you're using SQLITE you should ignore under >>>
+   database: data
+   hostname: 127.0.0.1
+   port: 3306
+   username: root
+   password: 1234
+   bungee: false
+
+#Hologram Settings
+Holograms: 
+   number-of-players-to-show: 10
+   playerFormat: '&7  #&f%rank% &3%player% &f- &7%amount% %plural%'
+
+   killsTitle: '&e&lKills Leaderboard'
+   deathsTitle: '&e&lDeaths Leaderboard'
+   killStreakTitle: '&e&lKill Streak Leaderboard'
+   bestKillStreakTitle: '&e&lBest Kill Streak Leaderboard'
+   mobKillsTitle: '&e&lAll Mob Kills Leaderboard'
+   passiveKillsTitle: '&e&lPassive Mob Kills Leaderboard'
+   hostileKillsTitle: '&e&lZombie Kills Leaderboard'
+   arrowsShotTitle: '&e&lArrows Shot Leaderboard'
+   arrowsHitTitle: '&e&lArrows Hit Leaderboard'
+   damageDealtTitle: '&e&lDamage Dealt Leaderboard'
+   damageTakenTitle: '&e&lDamage Taken Leaderboard'
+Other: 
+   debug: false

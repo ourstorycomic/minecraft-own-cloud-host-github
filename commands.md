@@ -28,5 +28,5 @@ You can alter pvp .
 
 
 #Credit goes to 
-[How2MC YouTube Channel](https://www.youtube.com/channel/UCZSZBeR-JM2u8nFhcuvMPjA)
+[How2MC YouTube Channel](pl)
 
